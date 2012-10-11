@@ -251,6 +251,10 @@ textarea {
 .main .heading {
   color: #08c;
   padding: 0 0 20px;
+  text-transform: uppercase;
+}
+.page-lebdo .more-lebdo img {
+  padding-right: 40px;
 }
 @media (max-width: 767px) {
   .main {
