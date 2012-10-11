@@ -1,4 +1,4 @@
-cqrs
+inweso
 ====
 
-documentation for cqrs modules and libraries
+Website of inweso
