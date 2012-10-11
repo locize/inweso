@@ -142,7 +142,7 @@ module.exports = function(grunt) {
     //  To learn more about using the server task, please refer to the code
     //  until documentation has been written.
     server: {
-      files: { "favicon.ico": "client/favicon.ico" },
+      files: { "favicon.ico": "favicon.ico" },
 
       folders: {
           "/": "./",
