@@ -16,3 +16,16 @@
         |  oder 
         a(href='#{path}pages/contact.html') kontaktieren
         |  Sie uns.
+
+
+    script(type='text/javascript')
+        var url = window.location.pathname;
+        if (url.length > 1) {
+            var links = $('.nav-inner a');
+            for (var i = 0, len = links.length; i < len; i++) {
+                var ln = $(links[i]);
+                if (ln.attr('href').indexOf(url) >= 0) {
+                    ln.addClass('selected');
+                }
+            }
+        }

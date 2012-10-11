@@ -74,7 +74,8 @@ textarea {
   color: #08c;
   padding: 1px 5px;
 }
-.nav a:hover {
+.nav a:hover,
+.nav a.selected {
   cursor: pointer;
   text-decoration: none;
   background-color: #08c;
