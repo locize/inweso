@@ -2,6 +2,9 @@
 // configuration file, which you can learn more about here:
 // https://github.com/cowboy/grunt/blob/master/docs/configuring.md
 //
+
+var options = require('./siteConfig');
+
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib');
@@ -142,6 +145,10 @@ module.exports = function(grunt) {
     //  To learn more about using the server task, please refer to the code
     //  until documentation has been written.
     server: {
+
+      host: '0.0.0.0',
+      port: process.env.PORT || options.port,
+
       files: { "favicon.ico": "favicon.ico" },
 
       folders: {
