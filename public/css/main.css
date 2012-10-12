@@ -254,6 +254,69 @@ textarea {
   padding: 0 0 20px;
   text-transform: uppercase;
 }
+.page-index .welcome i {
+  position: relative;
+  font-size: 600px;
+  line-height: 500px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  text-shadow: 2px 2px #000;
+}
+@media (max-width: 1200px) {
+  .page-index .welcome i {
+    font-size: 600px;
+    line-height: 500px;
+  }
+}
+@media (max-width: 979px) {
+  .page-index .welcome i {
+    font-size: 600px;
+    line-height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .page-index .welcome i {
+    font-size: 350px;
+    line-height: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .page-index .welcome i {
+    font-size: 200px;
+    line-height: 180px;
+  }
+}
+.page-index .welcome .logo {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  height: 150px;
+}
+@media (max-width: 1200px) {
+  .page-index .welcome .logo {
+    left: 300px;
+  }
+}
+@media (max-width: 979px) {
+  .page-index .welcome .logo {
+    left: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .page-index .welcome .logo {
+    left: 250px;
+    top: 150px;
+    height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .page-index .welcome .logo {
+    left: 160px;
+    top: 90px;
+    height: 60px;
+  }
+}
 .page-lebdo .more-lebdo img {
   padding-right: 40px;
 }
