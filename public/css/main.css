@@ -262,6 +262,7 @@ textarea {
   text-align: center;
   display: block;
   text-shadow: 2px 2px #000;
+  z-index: -2;
 }
 @media (max-width: 1200px) {
   .page-index .welcome i {
