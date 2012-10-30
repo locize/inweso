@@ -4,7 +4,7 @@ var settings = {
 };
 
 if (process.env.NODE_ENV == 'production') {
-  settings.port = 3001;
+  settings.port = 3010;
 }
 
 if (process.env.HOSTING == 'cloudnode') {
