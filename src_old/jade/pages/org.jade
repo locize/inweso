@@ -1,0 +1,44 @@
+- var path = '../'
+//- - var title = 'inweso'
+!!! 5
+html(lang="en")
+  head
+    include ../includes/layout/head
+
+  body
+    include ../includes/layout/header
+
+    include ../includes/layout/nav
+          
+    include ../includes/layout/content
+      .row-fluid
+        .span12
+          .heading
+            h2 ...wir lieben unseren Job
+
+          .row-fluid
+            .span6
+              p Als GmbH starten wir 2012 mit inweso welche sich zum Ziel gesetzt hat, moderne Software Lösungen zu entwickeln und zu vertreiben.
+              p Angefangen mit lebdo und begeistert von den Technologien wie node.js, HTML5 und JavaScript entwickelt inweso heute noch eigene Produkte.
+              img(src='#{path}public/img/support.png')
+
+            .span6
+              p
+                i Jan Mühlemann, 
+                | Vorsitzender Geschäftsführer
+                br
+                i Adriano Raiano, 
+                | Geschäftsführer
+
+              p
+                i Sie sollten uns kontaktieren, wenn...
+                br
+                | ... Sie ein Prozess in Ihrem Leben oder Ihrem Unternehmen automatisieren wollen...
+                br
+                | ... Sie eine bestehende Software durch eine webbasierte ersetzen wollen...
+                br
+                | ... Sie ein webbasiertes Werkzeug brauchen...
+                br
+                b und dies anderen auch zur Verfügung stellen möchten!
+    
+    include ../includes/layout/endscripts

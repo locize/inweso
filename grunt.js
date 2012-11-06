@@ -116,10 +116,9 @@ module.exports = function(grunt) {
     // only want to load one stylesheet in index.html.
     mincss: {
       "public/css/index.css": [
-        "public/css/bootstrap-2.0.2.css",
-        "public/css/bootstrap-responsive-2.0.2.css",
+        "public/css/bootstrap-2.2.0.css",
+        "public/css/bootstrap-responsive-2.2.0.css",
         "public/css/font-awesome-2.0.css",
-        "public/css/prettify.css",
         "public/css/main.css"
       ]
     },
@@ -217,7 +216,7 @@ module.exports = function(grunt) {
   // dist/debug/templates.js, compile all the application code into
   // dist/debug/require.js, and then concatenate the require/define shim
   // almond.js and dist/debug/templates.js into the require.js file.
-  grunt.registerTask("default", "clean jade prettify stylus copy");
+  grunt.registerTask("default", "clean jade prettify stylus copy mincss");
 
   // The debug task is simply an alias to default to remain consistent with
   // debug/release.
@@ -225,6 +224,6 @@ module.exports = function(grunt) {
 
   // The release task will run the debug tasks and then minify the
   // dist/debug/require.js file and CSS files.
-  grunt.registerTask("build", "default mincss");
+  grunt.registerTask("build", "default");
 
 };
