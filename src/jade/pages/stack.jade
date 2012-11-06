@@ -1,47 +1,24 @@
-- var path = ''
+- var path = '../'
 !!! 5
 html(lang="en")
   head
-    include includes/layout/head
+    include ../includes/layout/head
 
   body     
-    include includes/layout/content
+    include ../includes/layout/content
       .navbar-wrapper
-        include includes/layout/navbar
+        include ../includes/layout/navbar
 
       #myCarousel.carousel.slide
         .carousel-inner
           .item.active
-            img(src='public/img/carousel/idea.jpg', alt='')
+            img(src='#{path}public/img/carousel/laptop.jpg', alt='')
             .container
               .carousel-caption
-                h1 Ihre Idee - unsere Lösung.
+                h1 Another example headline.
                 p.lead
-                  | Wir machen mehr aus Ihrer Idee. Bei uns findet Ihre Idee den geeigneten Nährboden um zu einem grossen Produkt heranzuwachsen.
-                a.btn.btn-large.btn-primary(href='#') Mehr ››
-          .item
-            img(src='public/img/carousel/laptop.jpg', alt='')
-            .container
-              .carousel-caption
-                h1 inweso - ein starker Partner.
-                p.lead
-                  | Erfahren Sie mehr über inweso und das Team, welches hinter Lösungen wie lebdo.ch steckt.
-                a.btn.btn-large.btn-primary(href='#') Mehr ››
-          .item
-            img(src='public/img/carousel/kiga.jpg', alt='')
-            .container
-              .carousel-caption
-                h1 lebdo.ch
-                p.lead
-                  | lebdo ist die Anwendung um Beobachtungen auf Stufe Kindergarten (auch für Grund- und Basisstufe), entsprechend den kantonal definierten Lehrplänen, zu dokumentieren und auszuwerten.
-                a.btn.btn-large.btn-warning(href='http://www.youtube.com/watch?v=nibEBiDw4QI') 
-                  i.icon-film
-                  |  Video
-                &nbsp;
-                a.btn.btn-large.btn-primary(href='http://lebdo.ch') Mehr ››
-
-        a.left.carousel-control(href='#myCarousel', data-slide='prev') ‹
-        a.right.carousel-control(href='#myCarousel', data-slide='next') ›
+                  | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                a.btn.btn-large.btn-primary(href='#') Learn more
 
       .container.marketing
 
@@ -106,12 +83,12 @@ html(lang="en")
             a(href='#') Terms
 
           
-    include includes/layout/endscripts
+    include ../includes/layout/endscripts
 
-    script(type='text/javascript')
-      !function ($) {
-          $(function(){
-            // carousel demo
-            $('#myCarousel').carousel()
-          })
-        }(window.jQuery)
+    // script(type='text/javascript')
+    //   !function ($) {
+    //       $(function(){
+    //         // carousel demo
+    //         $('#myCarousel').carousel()
+    //       })
+    //     }(window.jQuery)

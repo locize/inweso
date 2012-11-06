@@ -1,0 +1,36 @@
+.navbar
+  .navbar-inner
+    // Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. 
+    a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    a.brand(href='#') 
+      img(src="#{path}public/img/inweso-reduced.png")
+    // Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. 
+    .nav-collapse.collapse
+      ul.nav
+        li.active
+          a(href='#{path}index.html') Startseite
+        li
+          a(href='#about') Über uns
+        li
+          a(href='#contact') Kontakt
+        // Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns 
+        li.dropdown
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Mehr ...
+            b.caret
+          ul.dropdown-menu
+            li
+              a(href='#') Action
+            li
+              a(href='#') Another action
+            li
+              a(href='#') Something else here
+            li.divider
+            li.nav-header Nav header
+            li
+              a(href='#') Separated link
+            li
+              a(href='#') One more separated link
