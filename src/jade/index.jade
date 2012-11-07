@@ -12,23 +12,23 @@ html(lang="en")
       #myCarousel.carousel.slide
         .carousel-inner
           .item.active
-            img(src='public/img/carousel/idea.jpg', alt='')
+            img(src='#{path}public/img/carousel/idea.jpg', alt='')
             .container
               .carousel-caption
                 h1 Ihre Idee - unsere Lösung.
                 p.lead
                   | Wir machen mehr aus Ihrer Idee. Bei uns findet Ihre Idee den geeigneten Nährboden um zu einem grossen Produkt heranzuwachsen.
-                a.btn.btn-large.btn-primary(href='#') Mehr ››
+                a.btn.btn-large.btn-primary(href='#{path}pages/solutions.html') Mehr ››
           .item
-            img(src='public/img/carousel/laptop.jpg', alt='')
+            img(src='#{path}public/img/carousel/laptop.jpg', alt='')
             .container
               .carousel-caption
                 h1 inweso - ein starker Partner.
                 p.lead
                   | Erfahren Sie mehr über inweso und das Team, welches hinter Lösungen wie lebdo.ch steckt.
-                a.btn.btn-large.btn-primary(href='#') Mehr ››
+                a.btn.btn-large.btn-primary(href='#{path}pages/aboutus.html') Mehr ››
           .item
-            img(src='public/img/carousel/kiga.jpg', alt='')
+            img(src='#{path}public/img/carousel/kiga.jpg', alt='')
             .container
               .carousel-caption
                 h1 lebdo.ch
@@ -38,80 +38,89 @@ html(lang="en")
                   i.icon-film
                   |  Video
                 &nbsp;
-                a.btn.btn-large.btn-primary(href='http://lebdo.ch') Mehr ››
+                a.btn.btn-large.btn-primary(href='#{path}pages/lebdo.html') Mehr ››
 
         a.left.carousel-control(href='#myCarousel', data-slide='prev') ‹
         a.right.carousel-control(href='#myCarousel', data-slide='next') ›
 
-      .container.marketing
+      .container
+        .container-padding.marketing
 
-        .row
-          .span4
-            img.img-circle(src='http://placehold.it/140x140')
-            h2 Heading
-            p
-              | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-            p
-              a.btn(href='#') View details »
+          .row-fluid
 
-          .span4
-            img.img-circle(src='http://placehold.it/140x140')
-            h2 Heading
-            p
-              | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-            p
-              a.btn(href='#') View details »
+            .span4
+              //- img.img-circle(src='#{path}public/img/features/nodejs.gif')
+              h2 
+                i.icon-trophy.icon-large
+                |  Lösungen
+              p.marketing-text
+                | Wir bieten unseren Kunden innovative Lösungen und begleiten diese von 
+                | der Idee bis zur fertigen Anwendung. Unser moderner Technologiestack 
+                | hilft dabei die besten Lösungen zu fairen Preisen anzubieten.
+              p
+                a.btn.btn-primary(href='#{path}pages/solutions.html') Weitere Infos »
 
-          .span4
-            img.img-circle(src='http://placehold.it/140x140')
-            h2 Heading
-            p
-              | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-            p
-              a.btn(href='#') View details »
+            .span4
+              //- img.img-circle(src='http://placehold.it/140x140')
+              h2
+                i.icon-heart.icon-large(style="color:#B31C1C;")
+                |  lebdo.ch
+              p.marketing-text
+                | lebdo ist die Anwendung um Beobachtungen auf Stufe Kindergarten
+                | (auch für Grund- und Basisstufe), entsprechend den kantonal 
+                | definierten Lehrplänen, zu dokumentieren und auszuwerten.
+              p
+                a.btn.btn-primary(href='#{path}pages/lebdo.html') Weitere Infos »
 
-        hr.featurette-divider
-        .featurette
-          img.featurette-image.pull-right(src='public/img/examples/browser-icon-chrome.png')
-          h2.featurette-heading
-            | First featurette headling.
-            span.muted It'll blow your mind.
-          p.lead
-            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-        hr.featurette-divider
-        .featurette
-          img.featurette-image.pull-left(src='public/img/examples/browser-icon-firefox.png')
-          h2.featurette-heading
-            | Oh yeah, it's that good.
-            span.muted See for yourself.
-          p.lead
-            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-        hr.featurette-divider
-        .featurette
-          img.featurette-image.pull-right(src='public/img/examples/browser-icon-safari.png')
-          h2.featurette-heading
-            | And lastly, this one.
-            span.muted Checkmate.
-          p.lead
-            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-        hr.featurette-divider
+            .span4
+              //- img.img-circle(src='#{path}public/img/inweso.png')
+              h2 
+                i.icon-home.icon-large
+                |  inweso
+              p.marketing-text
+                | Erfahren Sie mehr über inweso und das Team, welches hinter Lösungen wie lebdo.ch
+                | steckt. Zögern Sie nicht uns bei Fragen oder für Anregungen zu kontaktieren.
+              p
+                a.btn.btn-primary(href='#{path}pages/aboutus.html') Weitere Infos »
 
-        footer
-          p.pull-right
-            a(href='#') Back to top
-          p
-            | © 2012 Company, Inc. ·
-            a(href='#') Privacy
-            | ·
-            a(href='#') Terms
+          //- hr.featurette-divider
+          //- .featurette
+          //-   img.featurette-image.pull-right(src='public/img/examples/browser-icon-chrome.png')
+          //-   h2.featurette-heading
+          //-     | First featurette headling.
+          //-     span.muted It'll blow your mind.
+          //-   p.lead
+          //-     | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+          //- hr.featurette-divider
+          //- .featurette
+          //-   img.featurette-image.pull-left(src='public/img/examples/browser-icon-firefox.png')
+          //-   h2.featurette-heading
+          //-     | Oh yeah, it's that good.
+          //-     span.muted See for yourself.
+          //-   p.lead
+          //-     | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+          //- hr.featurette-divider
+          //- .featurette
+          //-   img.featurette-image.pull-right(src='public/img/examples/browser-icon-safari.png')
+          //-   h2.featurette-heading
+          //-     | And lastly, this one.
+          //-     span.muted Checkmate.
+          //-   p.lead
+          //-     | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+          //- hr.featurette-divider
 
+    include includes/layout/footer
           
     include includes/layout/endscripts
 
     script(type='text/javascript')
+      $(document).ready(function() {
+        $('.marketing-text').equalHeights();
+      });
+
       !function ($) {
           $(function(){
-            // carousel demo
             $('#myCarousel').carousel()
           })
         }(window.jQuery)
+

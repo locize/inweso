@@ -1,9 +1,16 @@
 @media (min-width: 979px)
-  .main-inner > .container
+  .main-inner .container
     width: 940px
     margin: 0 auto
 
+  .main-inner > .container
+    margin-bottom: 50px
+
 @media (max-width: 979px)
+  
+  .container-padding
+    padding-right: 30px
+    padding-left: 30px
 
   .navbar-wrapper
     margin: 20px 0 0
@@ -32,6 +39,16 @@
   .carousel-caption .btn
     font-size: 18px
 
+  .carousel.small
+    margin-bottom: 10px
+    
+    .item
+      height: 154px
+
+    .carousel-caption
+      margin-bottom: 5px
+      padding: 0 20px
+
   .featurette
     height: auto
     padding: 0
@@ -45,6 +62,15 @@
 
 
 @media (max-width: 767px)
+  body
+    background: $white
+
+  .main-inner > .container
+    box-shadow: none
+
+  .container-padding
+    padding-right: 0
+    padding-left: 0
 
   .navbar-inner
     margin: -20px
@@ -71,6 +97,16 @@
   .carousel-caption .lead,
   .carousel-caption .btn
     font-size: 18px
+
+  .carousel.small
+    margin-bottom: 10px
+
+    .item
+      height: 154px
+
+    .carousel-caption
+      margin-bottom: 5px
+      padding: 0 20px
 
   .marketing .span4 + .span4
     margin-top: 40px

@@ -16,6 +16,15 @@ body {
   -webkit-box-shadow: 0 0 40px #111;
   box-shadow: 0 0 40px #111;
   background: #fff;
+  margin-bottom: 50px;
+}
+.container-padding,
+footer {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.container > .container-padding:last-child {
+  padding-bottom: 50px;
 }
 .navbar-wrapper {
   margin: 20px 10px -90px 10px;
@@ -82,6 +91,15 @@ body {
 .carousel-caption .btn {
   margin-top: 10px;
 }
+.carousel.small {
+  margin-bottom: 20px;
+}
+.carousel.small .item {
+  height: 200px;
+}
+.carousel.small .carousel-caption {
+  margin-bottom: 5px;
+}
 .marketing .span4 {
   text-align: center;
 }
@@ -92,19 +110,24 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
+.marketing .center,
+/* Featurettes
+------------------------- */,
 .featurette-divider {
   margin: 80px 0;
 /* Space out the Bootstrap <hr> more */
 }
 .featurette {
-  padding-top: 120px;
+  padding-top: 40px;
 /* Vertically center images part 1: add padding above and below text. */
   overflow: hidden;
 /* Vertically center images part 2: clear their floats. */
 }
+.featurette ul li {
+  margin-bottom: 10px;
+}
 .featurette-image {
-  margin-top: -120px;
-/* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+  width: 360px;
 }
 .featurette-image.pull-left {
   margin-right: 40px;
@@ -119,12 +142,19 @@ body {
   letter-spacing: -1px;
 }
 @media (min-width: 979px) {
-  .main-inner > .container {
+  .main-inner .container {
     width: 940px;
     margin: 0 auto;
   }
+  .main-inner > .container {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 979px) {
+  .container-padding {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
   .navbar-wrapper {
     margin: 20px 0 0;
     width: auto;
@@ -152,6 +182,16 @@ body {
   .carousel-caption .btn {
     font-size: 18px;
   }
+  .carousel.small {
+    margin-bottom: 10px;
+  }
+  .carousel.small .item {
+    height: 154px;
+  }
+  .carousel.small .carousel-caption {
+    margin-bottom: 5px;
+    padding: 0 20px;
+  }
   .featurette {
     height: auto;
     padding: 0;
@@ -165,6 +205,17 @@ body {
   }
 }
 @media (max-width: 767px) {
+  body {
+    background: #fff;
+  }
+  .main-inner > .container {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .container-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
   .navbar-inner {
     margin: -20px;
   }
@@ -186,6 +237,16 @@ body {
   .carousel-caption .lead,
   .carousel-caption .btn {
     font-size: 18px;
+  }
+  .carousel.small {
+    margin-bottom: 10px;
+  }
+  .carousel.small .item {
+    height: 154px;
+  }
+  .carousel.small .carousel-caption {
+    margin-bottom: 5px;
+    padding: 0 20px;
   }
   .marketing .span4 + .span4 {
     margin-top: 40px;

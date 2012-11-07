@@ -5,7 +5,7 @@
       span.icon-bar
       span.icon-bar
       span.icon-bar
-    a.brand(href='#') 
+    a.brand(href='#{path}index.html') 
       img(src="#{path}public/img/inweso-reduced.png")
     // Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. 
     .nav-collapse.collapse
@@ -13,9 +13,9 @@
         li.active
           a(href='#{path}index.html') Startseite
         li
-          a(href='#about') Über uns
+          a(href='#{path}pages/aboutus.html') Über uns
         li
-          a(href='#contact') Kontakt
+          a(href='#{path}pages/aboutus.html#contact') Kontakt
         // Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns 
         li.dropdown
           a.dropdown-toggle(href='#', data-toggle='dropdown')
@@ -23,14 +23,8 @@
             b.caret
           ul.dropdown-menu
             li
-              a(href='#') Action
-            li
-              a(href='#') Another action
-            li
-              a(href='#') Something else here
+              a(href='#{path}pages/solutions.html') inweso als Partner
             li.divider
-            li.nav-header Nav header
+            li.nav-header Eigene Lösungen
             li
-              a(href='#') Separated link
-            li
-              a(href='#') One more separated link
+              a(href='#{path}pages/lebdo.html') lebdo.ch
