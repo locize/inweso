@@ -10,18 +10,11 @@
 //-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 //-   })();
 
+if (typeof(nav) == 'undefined')
+  - var nav = '.home'
+
 script(type='text/javascript')
-  !function ($) {
-    $(function(){
-      var url = window.location.pathname;
-      if (url.length > 1) {
-        var links = $('.nav-inner a');
-        for (var i = 0, len = links.length; i < len; i++) {
-          var ln = $(links[i]);
-          if (ln.attr('href').indexOf(url) >= 0) {
-            ln.addClass('selected');
-          }
-        }
-      }
-    })
-  }(window.jQuery)
+
+    var nav = '#{nav}';
+
+    $(nav).addClass('active');
