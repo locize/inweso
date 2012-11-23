@@ -18,6 +18,7 @@ ssh -t $USER@$SERVER "cd $DEPLOY_PATH && \
                    git pull && \
                    npm install && \
                    grunt build && \
+                   sudo stop inweso && \
                    sudo start inweso"
 
 #ssh $USER@$SERVER "cd $DEPLOY_PATH && \
